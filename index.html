@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shri Morjai Devasthan | Morjim, Goa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="lang-en">
+    <!-- ========== TOP BORDER STRIP ========== -->
+    <div class="border-strip"></div>
+
+    <!-- ========== HEADER / NAV ========== -->
+    <header>
+      <nav>
+        <a href="#home" class="nav-logo" onclick="showSection('home')">
+          <span class="logo-en en">Shri Morjai Devasthan</span>
+          <span class="logo-mr mr">श्री मोरजाई देवस्थान</span>
+        </a>
+
+        <ul class="nav-links">
+          <li>
+            <a href="#home" onclick="showSection('home')" class="active">
+              <span class="en">Home</span>
+              <span class="mr">मुख्य</span>
+            </a>
+          </li>
+          <li>
+            <a href="#history" onclick="showSection('history')">
+              <span class="en">History</span>
+              <span class="mr">इतिहास</span>
+            </a>
+          </li>
+          <li>
+            <a href="#festivals" onclick="showSection('festivals')">
+              <span class="en">Festivals</span>
+              <span class="mr">सण</span>
+            </a>
+          </li>
+          <li>
+            <a href="#gallery" onclick="showSection('gallery')"
+              ><span class="en">Gallery</span>
+              <span class="mr">छायाचित्रे</span>
+            </a>
+          </li>
+          <li>
+            <a href="#committee" onclick="showSection('committee')">
+              <span class="en">Committee</span>
+              <span class="mr">समिती</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onclick="showSection('contact')">
+              <span class="en">Contact</span>
+              <span class="mr">संपर्क</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button id="btn-en" class="active-lang" onclick="setLang('en')">
+            EN
+          </button>
+          <button id="btn-mr" onclick="setLang('mr')">मराठी</button>
+        </div>
+
+        <button class="hamburger" aria-label="Menu" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+
+      <nav class="mobile-nav" id="mobileNav">
+        <a
+          href="#home"
+          onclick="
+            showSection('home');
+            toggleMenu();
+          "
+        >
+          <span class="en">Home</span>
+          <span class="mr">मुख्य</span>
+        </a>
+        <a
+          href="#history"
+          onclick="
+            showSection('history');
+            toggleMenu();
+          "
+        >
+          <span class="en">History</span>
+          <span class="mr">इतिहास</span>
+        </a>
+        <a
+          href="#festivals"
+          onclick="
+            showSection('festivals');
+            toggleMenu();
+          "
+        >
+          <span class="en">Festivals</span>
+          <span class="mr">सण</span>
+        </a>
+        <a
+          href="#gallery"
+          onclick="
+            showSection('gallery');
+            toggleMenu();
+          "
+        >
+          <span class="en">Gallery</span>
+          <span class="mr">छायाचित्रे</span>
+        </a>
+        <a
+          href="#committee"
+          onclick="
+            showSection('committee');
+            toggleMenu();
+          "
+        >
+          <span class="en">Committee</span>
+          <span class="mr">समिती</span>
+        </a>
+        <a
+          href="#contact"
+          onclick="
+            showSection('contact');
+            toggleMenu();
+          "
+        >
+          <span class="en">Contact</span>
+          <span class="mr">संपर्क</span>
+        </a>
+      </nav>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay-bottom"></div>
+      <div class="hero-overlay-right"></div>
+
+      <div class="hero-deity">
+        <span class="om">ॐ</span>
+
+        <h1 class="en">Shri Morjai<br />Devasthan</h1>
+        <h1 class="mr">श्री मोरजाई<br />देवस्थान</h1>
+
+        <span class="hero-sub en">Morjim · Pernem · Goa</span>
+        <span class="hero-sub mr">मोर्जिम · पेडणे · गोवा</span>
+
+        <div class="divider-gold"></div>
+
+        <div class="timings">
+          <p class="en">
+            Morning: 6:00 AM – 12:00 PM<br />Evening: 4:00 PM – 9:00 PM
+          </p>
+          <p class="mr">
+            सकाळ: सकाळी ६:०० – दुपारी १२:००<br />सायंकाळ: दुपारी ४:०० – रात्री
+            ९:००
+          </p>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span class="scroll-cue en">Explore the Shrine</span>
+        <span class="scroll-cue mr" style="font-family: var(--font-deva)"
+          >देवस्थान जाणून घ्या</span
+        >
+      </div>
+    </section>
+
+    <!-- ========== SECTION: ABOUT / WELCOME ========== -->
+    <section class="section-wrap" id="sec-home">
+      <div class="section-rule"><span>॥</span></div>
+
+      <h2 class="sec-title en">Welcome to Morjai Temple</h2>
+      <h2 class="sec-title mr">मोरजाई मंदिरात आपले स्वागत आहे</h2>
+      <span class="sec-subtitle en">Guardian Goddess of Morjim</span>
+      <span class="sec-subtitle mr">मोर्जिमची संरक्षक देवी</span>
+      <div class="kaavi-bar"></div>
+
+      <div class="welcome-grid">
+        <div class="welcome-text">
+          <p class="en">
+            Nestled at the serene confluence of the Chapora River and the
+            Arabian Sea, the Shri Morjai Devasthan stands as the spiritual heart
+            of Morjim village in Pernem, North Goa. This ancient temple is
+            dedicated to Goddess Morjai — a fierce and benevolent deity revered
+            across generations by the people of Morjim.
+          </p>
+          <p class="mr">
+            चापोरा नदी आणि अरबी समुद्राच्या शांत संगमावर वसलेले, श्री मोरजाई
+            देवस्थान उत्तर गोव्याच्या पेडणे तालुक्यातील मोर्जिम गावाचे
+            आध्यात्मिक केंद्र आहे. हे प्राचीन मंदिर देवी मोरजाईला समर्पित आहे —
+            एक तेजस्वी आणि कल्याणकारी देवता जी पिढ्यानपिढ्या मोर्जिमच्या लोकांनी
+            पूजनीय मानली आहे.
+          </p>
+
+          <p class="en">
+            The land of Morjim — once known as Mayurgram, the land of peacocks —
+            carries a legend as deep as the tides. The temple not only anchors
+            the community's faith but also witnesses vibrant festivals that have
+            been celebrated for centuries.
+          </p>
+          <p class="mr">
+            मोर्जिमची भूमी — एकेकाळी मयूरग्राम म्हणून ओळखली जाणारी, मोराची भूमी
+            — एक खोल आख्यायिका बाळगते. हे मंदिर केवळ समाजाच्या श्रद्धेचे आधार
+            नाही, तर शतकानुशतके साजऱ्या होणाऱ्या उत्साही उत्सवांचेही साक्षीदार
+            आहे.
+          </p>
+
+          <div class="info-pills">
+            <span class="pill en">📍 Vithaldaswada, Morjim</span>
+            <span class="pill mr">📍 वित्थलदासवाडा, मोर्जिम</span>
+            <span class="pill en">🕐 Open Daily</span>
+            <span class="pill mr">🕐 रोज उघडे</span>
+            <span class="pill en">🎊 Kalas Utsav · Ghodemodni</span>
+            <span class="pill mr">🎊 कळस उत्सव · घोडेमोडणी</span>
+          </div>
+        </div>
+
+        <div class="welcome-img-block">
+          <img src="temple-night.jpeg" alt="Morjai Temple at night" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION: HISTORY ========== -->
+    <section class="section-wrap" id="sec-history" style="display: none">
+      <div class="section-rule"><span>॥</span></div>
+
+      <h2 class="sec-title en">The Legend of Morjai</h2>
+      <h2 class="sec-title mr">मोरजाईची कथा</h2>
+      <span class="sec-subtitle en">From the Ghats to the Sea</span>
+      <span class="sec-subtitle mr">घाटांपासून समुद्रापर्यंत</span>
+      <div class="kaavi-bar"></div>
+
+      <div class="history-timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="timeline-content">
+            <h3 class="en">Divine Sisterhood</h3>
+            <h3 class="mr">दैवी भगिनीभाव</h3>
+            <p class="en">
+              Long ago, in the rugged peaks of the Western Ghats, seven divine
+              sisters and their lone brother Khetoba began a journey that would
+              shape the spiritual map of Goa. Among them was Morjai — a goddess
+              of fierce grace and quiet strength. While her sisters chose hills
+              and plains — Lairai in Shirgao and Milagres in Mapusa — Morjai's
+              destiny lay where the river meets the Arabian Sea.
+            </p>
+            <p class="mr">
+              फार वर्षांपूर्वी, पश्चिम घाटाच्या उंच कड्यांमध्ये, सात दैवी बहिणी
+              आणि त्यांचा एकुलता एक भाऊ खेतोबा यांनी एका प्रवासाला सुरुवात केली;
+              अशा प्रवासाला, ज्याने गोव्याचा आध्यात्मिक नकाशाच बदलून टाकला. या
+              बहिणींमध्ये मोरजाई ही एक अत्यंत तेजस्वी आणि तितकीच शांत संयम
+              असलेली देवी होती. तिच्या इतर बहिणींनी स्वतःसाठी डोंगर आणि मैदाने
+              निवडली — जसे की शिरगावची लईराई आणि म्हापसाची मिलाग्रेस — परंतु
+              मोरजाईचे नशीब मात्र तिथे होते, जिथे नदी अरबी समुद्राला जाऊन मिळते.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="timeline-content">
+            <h3 class="en">The Trial and the Tides</h3>
+            <h3 class="mr">परीक्षा आणि लाटा</h3>
+            <p class="en">
+              The lore tells of a moment of divine tension. Morjai, in a moment
+              of disobedience, was cast into the flowing waters by her elder
+              sister Lairai. Carried by the currents, she floated toward the
+              coast. At a place now known as Bombalebharni, her presence was
+              felt in the water. Local fisherfolk and village elders — led by
+              the ancestral figure Sadam Shet — discovered the sacred idol. They
+              didn't just find a statue; they found a protector.
+            </p>
+            <p class="mr">
+              असे म्हटले जाते की, मोरजाईने आज्ञा मोडल्यामुळे संतप्त होऊन तिची
+              थोरली बहीण लईराई हिने तिला वाहत्या पाण्यात सोडून दिले. पाण्याच्या
+              प्रवाहाबरोबर वाहत ती किनाऱ्याच्या दिशेने आली. आज ज्याला
+              'बोंबलेभर्णी' म्हणून ओळखले जाते, त्या ठिकाणी मोरजाईच्या
+              अस्तित्वाची प्रचिती प्रथम आली. सदाम शेठ या पूर्वज पुरुषाच्या
+              नेतृत्वाखाली, स्थानिक कोळी बांधवांनी आणि गावातील थोर-मोठ्यांनी ती
+              पवित्र मूर्ती शोधून काढली. त्यांना तिथे केवळ एक मूर्तीच सापडली
+              नव्हती, तर साक्षात एक रक्षणकर्ती मिळाली होती.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot">
+            <div class="dot"></div>
+            <div class="line"></div>
+          </div>
+          <div class="timeline-content">
+            <h3 class="en">The Guardian of the Peacock Land</h3>
+            <h3 class="mr">मोराच्या भूमीचा रक्षणकर्ता</h3>
+            <p class="en">
+              The village she chose was a lush sanctuary of peacocks, known as
+              Mayurgram. As the goddess took her seat, the village became Morjim
+              — the land born of the peacock. To protect her, the guardian deity
+              Satpurush stepped forward. Legend says he defeated "360 evils" and
+              lowered the rising floods to make the land habitable. To this day,
+              the villagers of Morjim never start a prayer without first
+              acknowledging Satpurush, the silent sentinel who stands beside
+              their Goddess.
+            </p>
+            <p class="mr">
+              तिने वास्तव्यासाठी निवडलेले गाव म्हणजे 'मयूरग्राम', जे त्यावेळी
+              मोरांचे एक नंदनवनच होते. जशी या देवीने तिथे आपली जागा घेतली, तसे
+              त्या गावाचे नाव 'मोरजी' झाले — म्हणजेच मोरांच्या वास्तव्यातून
+              जन्मलेली भूमी. तिच्या रक्षणासाठी 'सातपुरुष' हे संरक्षक दैवत पुढे
+              आले. पौराणिक कथेनुसार, त्यांनी '३६० अनिष्ट शक्तींचा' पराभव केला
+              आणि वाढत्या पुराचे पाणी ओसरवून ती जमीन राहण्यायोग्य बनवली. आजही,
+              मोरजीचे ग्रामस्थ आपल्या देवीची प्रार्थना सुरू करण्यापूर्वी
+              सातपुरुषांना नमन करण्यास विसरत नाहीत.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION: FESTIVALS ========== -->
+    <section class="section-wrap" id="sec-festivals" style="display: none">
+      <div class="section-rule"><span>॥</span></div>
+
+      <h2 class="sec-title en">Festivals & Celebrations</h2>
+      <h2 class="sec-title mr">उत्सव आणि सण</h2>
+      <span class="sec-subtitle en">Sacred Traditions of Morjim</span>
+      <span class="sec-subtitle mr">मोर्जिमच्या पवित्र परंपरा</span>
+      <div class="kaavi-bar"></div>
+
+      <div class="festival-grid">
+        <div class="festival-card">
+          <img
+            class="festival-card-img"
+            src="temple-kalas.jpeg"
+            alt="Kalas Utsav"
+          />
+          <div class="festival-card-body">
+            <h3 class="en">Kalas Utsav</h3>
+            <h3 class="mr">कळस उत्सव</h3>
+            <p class="en">
+              This sacred festival was started by the Porab and Gauns families.
+              The 'Kalas' — an earthen pot filled with water and mango leaves —
+              is revered as Grampurush, the God of the Village. Celebrated once
+              every three, five, or seven years, it marks the time when
+              Kartikeya sits on the lap of his mother Morjai. During their
+              separation, the goddess weeps until her nine-yard saree is wet — a
+              moment both divine and deeply moving.
+            </p>
+            <p class="mr">
+              या पवित्र उत्सवाची सुरुवात परब आणि गौंस कुटुंबांनी केली. पाणी आणि
+              आंब्याच्या पानांनी भरलेला 'कलश' हा साक्षात 'ग्रामपुरुष' म्हणजेच
+              गावाचा देव म्हणून पूजला जातो. हा उत्सव दर तीन, पाच किंवा सात
+              वर्षांनी एकदा साजरा केला जातो; हा तो काळ असतो जेव्हा भगवान
+              कार्तिकेय आपली माता मोरजाई हिच्या मांडीवर बसतात. पौराणिक कथेनुसार,
+              त्यांच्या विरहाच्या काळात देवी इतकी व्याकुळ होऊन रडते की तिची
+              नऊवारी साडी अश्रूंनी भिजून चिंब होते — हा क्षण अत्यंत दैवी आणि
+              मनाला स्पर्श करणारा असत
+            </p>
+          </div>
+        </div>
+
+        <div class="festival-card">
+          <img
+            class="festival-card-img"
+            src="ghodemandani.jpeg"
+            alt="Ghodemodni Festival"
+          />
+          <div class="festival-card-body">
+            <h3 class="en">Ghodemodni</h3>
+            <h3 class="mr">घोडेमोडणी</h3>
+            <p class="en">
+              One of the most vibrant festivals of Morjim, Ghodemodni is
+              performed during Shigmo. This ancient dance form reenacts legends
+              of bravery and warfare — the dancer wears warrior attire over a
+              dummy horse frame and carries a sword, marching towards the Morjai
+              temple to the beats of drums. It is a living expression of the
+              heritage and valor of the land.
+            </p>
+            <p class="mr">
+              शिगमोत्सवादरम्यान साजरा केला जाणारा 'घोडेमोडणी' हा मोरजीतील सर्वात
+              उत्साही आणि रंगतदार सणांपैकी एक आहे. हा प्राचीन नृत्यप्रकार शौर्य
+              आणि युद्धाच्या दंतकथांना उजाळा देतो. यामध्ये नर्तक घोड्याच्या
+              आकाराची लाकडी चौकट कमरेला बांधून, योद्ध्याचा पोशाख परिधान करतो आणि
+              हातात तलवार घेऊन ढोल-ताशांच्या तालावर मोरजाई मंदिराकडे कूच करतो.
+              हे नृत्य म्हणजे या भूमीचा समृद्ध वारसा आणि पराक्रमाची एक जिवंत
+              अभिव्यक्ती आहे.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SECTION: GALLERY ========== -->
+    <section class="section-wrap" id="sec-gallery" style="display: none">
+      <div class="section-rule"><span>॥</span></div>
+
+      <h2 class="sec-title en">Temple Gallery</h2>
+      <h2 class="sec-title mr">मंदिर छायाचित्रे</h2>
+      <span class="sec-subtitle en">Sacred Spaces &amp; Moments</span>
+      <span class="sec-subtitle mr">पवित्र स्थाने आणि क्षण</span>
+      <div class="kaavi-bar"></div>
+
+      <div class="gallery-grid">
+        <figure onclick="openLightbox('temple1.jpeg')">
+          <img src="temple1.jpeg" alt="Morjai Temple" loading="lazy" />
+          <figcaption class="en">Morjai Temple</figcaption>
+        </figure>
+        <figure onclick="openLightbox('temple-mandap.jpeg')">
+          <img src="temple-mandap.jpeg" alt="Mandap" loading="lazy" />
+          <figcaption class="en">Mandap</figcaption>
+        </figure>
+        <figure onclick="openLightbox('temple-open-area.jpeg')">
+          <img src="temple-open-area.jpeg" alt="Open Area" loading="lazy" />
+          <figcaption class="en">Open Area</figcaption>
+        </figure>
+        <figure onclick="openLightbox('temple-side-enterance.jpeg')">
+          <img
+            src="temple-side-enterance.jpeg"
+            alt="Side Entrance"
+            loading="lazy"
+          />
+          <figcaption class="en">Side Entrance</figcaption>
+        </figure>
+        <figure onclick="openLightbox('temple-side-garden.jpeg')">
+          <img src="temple-side-garden.jpeg" alt="Side Garden" loading="lazy" />
+          <figcaption class="en">Side Garden</figcaption>
+        </figure>
+        <figure onclick="openLightbox('ceiling-kavi-style-painting.jpeg')">
+          <img
+            src="ceiling-kavi-style-painting.jpeg"
+            alt="Kavi Style Ceiling"
+            loading="lazy"
+          />
+          <figcaption class="en">Kavi Style Ceiling</figcaption>
+        </figure>
+        <figure onclick="openLightbox('shiv-temple.jpeg')">
+          <img src="shiv-temple.jpeg" alt="Shiv Temple" loading="lazy" />
+          <figcaption class="en">Shiv Temple</figcaption>
+        </figure>
+        <figure onclick="openLightbox('temple-night.jpeg')">
+          <img src="temple-night.jpeg" alt="Temple at Night" loading="lazy" />
+          <figcaption class="en">Temple at Night</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== SECTION: COMMITTEE ========== -->
+    <section class="section-wrap" id="sec-committee" style="display: none">
+      <div class="section-rule"><span>॥</span></div>
+
+      <h2 class="sec-title en">Temple Committee</h2>
+      <h2 class="sec-title mr">देवस्थान समिती</h2>
+      <span class="sec-subtitle en">Administration &amp; Management</span>
+      <span class="sec-subtitle mr">प्रशासन आणि व्यवस्थापन</span>
+      <div class="kaavi-bar"></div>
+
+      <div class="committee-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th class="en">Designation</th>
+              <th class="mr">पद</th>
+              <th class="en">Name</th>
+              <th class="mr">नाव</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="en">President</td>
+              <td class="mr">अध्यक्ष</td>
+              <td class="en">Ramnath Shetgaonkar</td>
+              <td class="mr">रामनाथ शेटगावकर</td>
+            </tr>
+            <tr>
+              <td class="en">Vice President</td>
+              <td class="mr">उपाध्यक्ष</td>
+              <td class="en">Prakash Shetgaonkar</td>
+              <td class="mr">प्रकाश शेटगावकर</td>
+            </tr>
+            <tr>
+              <td class="en">Secretary</td>
+              <td class="mr">सचिव</td>
+              <td class="en">Nilu Tandel</td>
+              <td class="mr">निलू तांडेल</td>
+            </tr>
+            <tr>
+              <td class="en">Treasurer</td>
+              <td class="mr">कोषाध्यक्ष</td>
+              <td class="en">Rajesh Shetgaonkar</td>
+              <td class="mr">राजेश शेटगावकर</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ========== SECTION: CONTACT ========== -->
+    <section class="section-wrap" id="sec-contact" style="display: none">
+      <div class="section-rule"><span>॥</span></div>
+
+      <h2 class="sec-title en">Contact &amp; Visit Us</h2>
+      <h2 class="sec-title mr">संपर्क करा आणि भेट द्या</h2>
+      <span class="sec-subtitle en">We Welcome All Devotees</span>
+      <span class="sec-subtitle mr">सर्व भक्तांचे स्वागत आहे</span>
+      <div class="kaavi-bar"></div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3 class="en">Temple Information</h3>
+          <h3 class="mr">मंदिर माहिती</h3>
+
+          <div class="contact-detail">
+            <span class="contact-icon">📍</span>
+            <div>
+              <span class="label en">Address</span>
+              <span class="label mr">पत्ता</span>
+              <p class="en">
+                Vithaldaswada, Morjim,<br />Pernem, Goa – 403 512
+              </p>
+              <p class="mr">
+                वित्थलदासवाडा, मोर्जिम,<br />पेडणे, गोवा – ४०३ ५१२
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-icon">🕐</span>
+            <div>
+              <span class="label en">Temple Timings</span>
+              <span class="label mr">मंदिर वेळ</span>
+              <p class="en">
+                Morning: 6:00 AM – 12:00 PM<br />Evening: 4:00 PM – 9:00 PM
+              </p>
+              <p class="mr">
+                सकाळ: सकाळी ६:०० – दुपारी १२:००<br />सायंकाळ: दुपारी ४:०० –
+                रात्री ९:००
+              </p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-icon">🙏</span>
+            <div>
+              <span class="label en">Deity</span>
+              <span class="label mr">देवता</span>
+              <p class="en">
+                Shri Morjai Devi<br /><em>Guardian of Morjim</em>
+              </p>
+              <p class="mr">
+                श्री मोरजाई देवी<br /><em>मोर्जिमची रक्षणकर्ती</em>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3842.167524334745!2d73.73735931024292!3d15.63606515082667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfeeace9c102f5%3A0xe58d8d8cf4b270e8!2sMorjai%20Temple!5e0!3m2!1sen!2sin!4v1777200943519!5m2!1sen!2sin"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Morjai Temple Location"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+      <p class="footer-name en">Shri Morjai Devasthan</p>
+      <p class="footer-name mr">श्री मोरजाई देवस्थान</p>
+      <p class="footer-loc en">Vithaldaswada · Morjim · Pernem · Goa</p>
+      <p class="footer-loc mr">वित्थलदासवाडा · मोर्जिम · पेडणे · गोवा</p>
+      <div class="footer-divider"></div>
+      <p class="footer-copy">
+        <span>© 2026 Shri Morjai Devasthan. All rights reserved.</span><br />
+        <span>Created by Zumansa Digital</span>
+      </p>
+    </footer>
+
+    <!-- ========== LIGHTBOX ========== -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <button
+        class="lightbox-close"
+        onclick="closeLightbox()"
+        aria-label="Close"
+      >
+        &times;
+      </button>
+      <img id="lightbox-img" src="" alt="Gallery image" />
+    </div>
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script src="index.js"></script>
+  </body>
+</html>
