@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shri Morjai Devasthan | , Goa</title>
+    <title>Shri Morjai Sansthan | , Goa</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,7 +22,7 @@
     <header>
       <nav>
         <a href="#home" class="nav-logo" onclick="showSection('home')">
-          <span class="logo-en en">Shri Devi Morjai Sanstan</span>
+          <span class="logo-en en">Shri Devi Morjai Sansthan</span>
           <span class="logo-mr mr">श्री देवी मोरजाई संस्थान</span>
         </a>
 
@@ -51,14 +51,14 @@
               <span class="mr">छायाचित्रे</span>
             </a>
           </li>
-
+          <!--
           <li>
             <a href="#committee" onclick="showSection('committee')">
               <span class="en">Committee</span>
               <span class="mr">समिती</span>
             </a>
           </li>
-
+-->
           <li>
             <a href="#contact" onclick="showSection('contact')">
               <span class="en">Contact</span>
@@ -120,6 +120,7 @@
           <span class="en">Gallery</span>
           <span class="mr">छायाचित्रे</span>
         </a>
+        <!--
         <a
           href="#committee"
           onclick="
@@ -129,7 +130,7 @@
         >
           <span class="en">Committee</span>
           <span class="mr">समिती</span>
-        </a>
+        </a>-->
         <a
           href="#contact"
           onclick="
@@ -152,8 +153,8 @@
       <div class="hero-deity">
         <span class="om">ॐ</span>
 
-        <h1 class="en">Shri Devi Morjai<br />Devasthan</h1>
-        <h1 class="mr">श्री देवी मोरजाई<br />देवस्थान</h1>
+        <h1 class="en">Shri Devi Morjai<br />Sansthan</h1>
+        <h1 class="mr">श्री देवी मोरजाई<br />संस्थान</h1>
 
         <span class="hero-sub en"> Morji· Pernem · Goa</span>
         <span class="hero-sub mr">मोरजी · पेडणे · गोवा</span>
@@ -172,9 +173,9 @@
       </div>
 
       <div class="hero-bottom">
-        <span class="scroll-cue en">Explore the Shrine</span>
+        <span class="scroll-cue en">Explore...</span>
         <span class="scroll-cue mr" style="font-family: var(--font-deva)"
-          >देवस्थान जाणून घ्या</span
+          >जाणून घ्या...</span
         >
       </div>
     </section>
@@ -193,14 +194,14 @@
         <div class="welcome-text">
           <p class="en">
             Nestled at the serene confluence of the Chapora River and the
-            Arabian Sea, the Shri Devi Morjai Devasthan stands as the spiritual
+            Arabian Sea, the Shri Devi Morjai Sansthan stands as the spiritual
             heart of village in Pernem, North Goa. This ancient temple is
             dedicated to Goddess Morjai — a fierce and benevolent deity revered
             across generations by the people of .
           </p>
           <p class="mr">
             शापोरा नदी आणि अरबी समुद्राच्या शांत संगमावर वसलेले, श्री देवी
-            मोरजाई देवस्थान उत्तर गोव्याच्या पेडणे तालुक्यातील मोरजी गावाचे
+            मोरजाई संस्थान उत्तर गोव्याच्या पेडणे तालुक्यातील मोरजी गावाचे
             आध्यात्मिक केंद्र आहे. हे प्राचीन मंदिर श्री देव मोरजाईला समर्पित
             आहे — एक तेजस्वी आणि कल्याणकारी देवता जी पिढ्यानपिढ्या मोरजीच्या
             लोकांनी पूजनीय मानली आहे.
@@ -564,12 +565,12 @@
             <h3 class="mr">कळस उत्सव</h3>
             <img
               class="festival-card-img"
-              src="kalash1.jpeg"
+              src="old-pics/kalas-puja.jpg"
               alt="Kalas puja"
             />
             <img
               class="festival-card-img"
-              src="kalash2.jpeg"
+              src="old-pics/kalas-visiting-morjai.jpg"
               alt="Kalas going to morjai"
             />
             <p class="en">
@@ -834,36 +835,109 @@
     <section class="section-wrap" id="sec-gallery" style="display: none">
       <div class="section-rule"><span>॥</span></div>
 
-      <h2 class="sec-title en">Temple Gallery</h2>
-      <h2 class="sec-title mr">मंदिर छायाचित्रे</h2>
+      <h2 class="sec-title en">Gallery</h2>
+      <h2 class="sec-title mr">मछायाचित्रे</h2>
       <span class="sec-subtitle en">Sacred Spaces &amp; Moments</span>
       <span class="sec-subtitle mr">पवित्र स्थाने आणि क्षण</span>
       <div class="kaavi-bar"></div>
 
       <div class="gallery-grid">
-        <figure onclick="openLightbox('temple1.jpeg')">
-          <img src="temple1.jpeg" alt="Morjai Temple" loading="lazy" />
-          <figcaption class="en">Morjai Temple</figcaption>
-        </figure>
-        <figure onclick="openLightbox('temple-mandap.jpeg')">
-          <img src="temple-mandap.jpeg" alt="Mandap" loading="lazy" />
-          <figcaption class="en">Mandap</figcaption>
-        </figure>
-        <figure onclick="openLightbox('temple-open-area.jpeg')">
-          <img src="temple-open-area.jpeg" alt="Open Area" loading="lazy" />
-          <figcaption class="en">Open Area</figcaption>
-        </figure>
-        <figure onclick="openLightbox('temple-side-enterance.jpeg')">
+        <figure onclick="openLightbox('old-pics/old-temple.jpg')">
           <img
-            src="temple-side-enterance.jpeg"
-            alt="Side Entrance"
+            src="old-pics/old-temple.jpg"
+            alt="Morjai Temple Old Pic"
             loading="lazy"
           />
-          <figcaption class="en">Side Entrance</figcaption>
+          <figcaption class="en">Morjai Temple</figcaption>
+          <figcaption class="mr">मोरजाई मंदिर</figcaption>
         </figure>
-        <figure onclick="openLightbox('temple-side-garden.jpeg')">
-          <img src="temple-side-garden.jpeg" alt="Side Garden" loading="lazy" />
-          <figcaption class="en">Side Garden</figcaption>
+        <figure onclick="openLightbox('old-pics/kalbhairav.jpg')">
+          <img src="old-pics/kalbhairav.jpg" alt="kalbhiarav" loading="lazy" />
+          <figcaption class="en">Kalbhairav</figcaption>
+          <figcaption class="mr">काळभैरव</figcaption>
+        </figure>
+        <figure onclick="openLightbox('old-pics/khind-aadhisthan.jpg')">
+          <img src="old-pics/khind-aadhisthan.jpg" alt="kind" loading="lazy" />
+          <figcaption class="en">Khind</figcaption>
+          <figcaption class="mr">खिंड</figcaption>
+        </figure>
+        <figure onclick="openLightbox('old-pics/khind.jpg')">
+          <img src="old-pics/khind.jpg" alt="khind" loading="lazy" />
+          <figcaption class="en">Khind</figcaption>
+          <figcaption class="mr">खिंड</figcaption>
+        </figure>
+        <figure onclick="openLightbox('old-pics/khind1.jpg')">
+          <img src="old-pics/khind1.jpg" alt="khind1" loading="lazy" />
+          <figcaption class="en">Khind</figcaption>
+          <figcaption class="mr">खिंड</figcaption>
+        </figure>
+        <figure onclick="openLightbox('old-pics/masks-shigmostav.jpg')">
+          <img
+            src="old-pics/masks-shigmostav.jpg"
+            alt="masks-shigmostav"
+            loading="lazy"
+          />
+          <figcaption class="en">Masks used in Shigmostav</figcaption>
+          <figcaption class="mr">शिग्मोत्सवातील मुखवटे</figcaption>
+        </figure>
+
+        <figure onclick="openLightbox('old-pics/ranche-purav.jpg')">
+          <img
+            src="old-pics/ranche-purav.jpg"
+            alt="ranche-purav"
+            loading="lazy"
+          />
+          <figcaption class="en">Ranche Purav</figcaption>
+          <figcaption class="mr">रणचे पुरव</figcaption>
+        </figure>
+        <figure onclick="openLightbox('old-pics/satpurush-temple.jpg')">
+          <img
+            src="old-pics/satpurush-temple.jpg"
+            alt="satpurush temple"
+            loading="lazy"
+          />
+          <figcaption class="en">Satpurush Temple</figcaption>
+          <figcaption class="mr">सत्पुरुषाचे मंदिर</figcaption>
+        </figure>
+        <figure onclick="openLightbox('old-pics/shasthi-sathi-temple1.jpg')">
+          <img
+            src="old-pics/shasthi-sathi-temple1.jpg"
+            alt="shasth sathi temple1"
+            loading="lazy"
+          />
+          <figcaption class="en">Shasthi Sathi Temple</figcaption>
+          <figcaption class="mr">षष्ठी सठी मंदिर</figcaption>
+        </figure>
+        <figure onclick="openLightbox('old-pics/veer-temple1.jpg')">
+          <img
+            src="old-pics/veer-temple1.jpg"
+            alt="veer temple"
+            loading="lazy"
+          />
+          <figcaption class="en">Veer Temple</figcaption>
+          <figcaption class="mr">वीर मंदिर</figcaption>
+        </figure>
+        <figure onclick="openLightbox('old-pics/veer-temple-inside.jpg')">
+          <img
+            src="old-pics/veer-temple-inside.jpg"
+            alt="inside veer temple"
+            loading="lazy"
+          />
+          <figcaption class="en">Inside Veer Temple</figcaption>
+          <figcaption class="mr">वीर मंदिर - आतला भाग</figcaption>
+        </figure>
+        <figure
+          onclick="openLightbox('old-pics/barajana-sthal(now-no-more).jpg')"
+        >
+          <img
+            src="old-pics/barajana-sthal(now-no-more).jpg"
+            alt="barajanancha sthal"
+            loading="lazy"
+          />
+          <figcaption class="en">Barajancha Sthal (now destroyed)</figcaption>
+          <figcaption class="mr">
+            बाराजणांचा स्थळ (आता नष्ट झाले आहे)
+          </figcaption>
         </figure>
         <figure onclick="openLightbox('ceiling-kavi-style-painting.jpeg')">
           <img
@@ -872,20 +946,34 @@
             loading="lazy"
           />
           <figcaption class="en">Kavi Style Ceiling</figcaption>
+          <figcaption class="mr">कवी शैलीतील छत</figcaption>
         </figure>
         <figure onclick="openLightbox('shiv-temple.jpeg')">
           <img src="shiv-temple.jpeg" alt="Shiv Temple" loading="lazy" />
           <figcaption class="en">Shiv Temple</figcaption>
+          <figcaption class="mr">शिव मंदिर</figcaption>
         </figure>
         <figure onclick="openLightbox('temple-night.jpeg')">
           <img src="temple-night.jpeg" alt="Temple at Night" loading="lazy" />
           <figcaption class="en">Temple at Night</figcaption>
+          <figcaption class="mr">रात्रीच्या वेळचे मंदिर</figcaption>
+        </figure>
+        <figure onclick="openLightbox('night-programme.jpg')">
+          <img
+            src="night-programme.jpg"
+            alt="night programme during prakatdin"
+            loading="lazy"
+          />
+          <figcaption class="en">night programme during prakatdin</figcaption>
+          <figcaption class="mr">
+            प्रकटदिनानिमित्त रात्रीचा कार्यक्रम
+          </figcaption>
         </figure>
       </div>
     </section>
 
     <!-- ========== SECTION: COMMITTEE ========== -->
-    <p style="text-align: center">Updation in progress....</p>
+    <!-- <p style="text-align: center">Updation in progress....</p> -->
     <!--
     <section class="section-wrap" id="sec-committee" style="display: none">
       <div class="section-rule"><span>॥</span></div>
@@ -981,7 +1069,7 @@
             <div>
               <span class="label en">Deity</span>
               <span class="label mr">देवता</span>
-              <p class="en">Shri Morjai Devi<br /><em>Guardian of </em></p>
+              <p class="en">Shri Morjai Devi<br /><em>Guardian of Morji</em></p>
               <p class="mr">
                 श्री मोरजाई देवी<br /><em>मोरजीची रक्षणकर्ती</em>
               </p>
@@ -1003,13 +1091,13 @@
 
     <!-- ========== FOOTER ========== -->
     <footer>
-      <p class="footer-name en">Shri Devi Morjai Devasthan</p>
-      <p class="footer-name mr">श्री देवी मोरजाई देवस्थान</p>
+      <p class="footer-name en">Shri Devi Morjai Sansthan</p>
+      <p class="footer-name mr">श्री देवी मोरजाई संस्थान</p>
       <p class="footer-loc en">Varchawada · Morji .Pernem · Goa</p>
       <p class="footer-loc mr">वरचावाडा · मोरजी · पेडणे · गोवा</p>
       <div class="footer-divider"></div>
       <p class="footer-copy">
-        <span>© 2026 Shri Morjai Devasthan. All rights reserved.</span><br />
+        <span>© 2026 Zumansa Digital. All rights reserved.</span><br />
         <!-- <span>Created by Zumansa Digital</span>-->
       </p>
     </footer>
